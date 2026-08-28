@@ -1,0 +1,10 @@
+# AROMA dependencies.  Tested with Python 3.10.
+torch>=2.0        # all per-pixel processing (CPU or CUDA)
+numpy>=1.23       # tone-curve nodes, histograms
+scipy>=1.9        # SLSQP solver for Eq. (20); loadmat for sensitivity_lut.mat
+imageio>=2.28     # still image read/write
+matplotlib>=3.5   # tools/plot_tone_curves.py only
+
+# Video I/O shells out to ffmpeg/ffprobe.  Use a system or conda install
+# (conda install ffmpeg), or uncomment the line below for a bundled binary:
+# imageio-ffmpeg>=0.4
